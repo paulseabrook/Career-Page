@@ -1,67 +1,156 @@
-body {
-  background-color: rgb(104, 170, 119);
-}
-.content {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
+html {
+  box-sizing: border-box;
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 }
 
-#headshot {
-  border-radius: 10px;
-  margin-bottom: 10px;
-  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
-  height: 400px;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-.para {
-  font-family: sans-serif;
-  font-size: 20px;
-  background-color: rgba(29, 21, 21, 0.5);
-  padding: 10px;
-  margin: 0px 20px 0px 20px;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 10px 10px 0 rgba(255, 234, 234, 0.1);
-}
-a,
-a:hover,
-a:active,
-a:visited {
-  color: white;
-}
-.links1 {
-  margin-top: 20px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(29, 21, 21, 0.5);
-  color: white;
-  box-shadow: 10px 10px 0 rgba(255, 234, 234, 0.1);
-  border-radius: 10px;
-}
-.links2 {
-  margin-top: 20px;
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  background-color: rgba(29, 21, 21, 0.5);
-  color: white;
-  box-shadow: 10px 10px 0 rgba(255, 234, 234, 0.1);
-  border-radius: 10px;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+      45deg,
+      rgb(158, 233, 193) 0%,
+      hsla(340, 100%, 55%, 0) 70%
+    ),
+    linear-gradient(135deg, rgb(96, 164, 198) 10%, hsla(225, 95%, 50%, 0) 80%),
+    linear-gradient(225deg, rgb(174, 164, 22) 10%, hsla(140, 90%, 50%, 0) 80%),
+    linear-gradient(315deg, rgb(172, 171, 170) 100%, hsla(35, 95%, 55%, 0) 70%);
 }
 
 h2 {
-  font-size: 30px;
-  font-weight: 600;
-  background-image: linear-gradient(to left, #031f01, #fdfdfd);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+  margin-top: 0;
+  padding-top: 0.8em;
 }
-.classWithShadow {
-  -moz-box-shadow: 3px 3px 4px #000;
-  -webkit-box-shadow: 3px 3px 4px #000;
-  box-shadow: 3px 3px 4px #000;
+
+nav {
+  position: relative;
+  perspective: 600px;
+}
+
+.cool > li > a {
+  color: rgb(198, 237, 187);
+  text-decoration: none;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.cool > li {
+  position: relative; /* important */
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  padding: 20px;
+  top: -20px;
+  border-radius: 2px;
+  transition: all 0.5s;
+  transform: translateY(100px);
+  will-change: opacity;
+  display: none;
+}
+
+/* step it down from display: none and opacity:  0 to display: block first, and then to opacity: 1 after our time delap */
+/* This is how animations work in REACT  */
+.trigger-enter .dropdown {
+  display: block;
+}
+
+.trigger-enter-active .dropdown {
+  opacity: 1;
+}
+
+.dropdownBackground {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50, 50, 93, 0.1),
+    0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s, opacity 0.1s, transform 0.2s;
+  transform-origin: 50% 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+}
+
+.dropdownBackground.open {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: white;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.bio {
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.7;
+}
+
+.bio img {
+  float: left;
+  margin-right: 20px;
+}
+
+.courses {
+  min-width: 300px;
+}
+
+.courses li {
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: #ffc600;
+}
+
+a.button {
+  background: black;
+  display: block;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
+.button[href*='twitter'] {
+  background: #019fe9;
+}
+.button[href*='facebook'] {
+  background: #3b5998;
+}
+.button[href*='courses'] {
+  background: #ffc600;
 }
