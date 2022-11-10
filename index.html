@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <img id="headshot" src="headshot.jpg" />
+      <div class="para">
+        <p>
+          Hello! Below are links to crucial tools and documentation used daily.
+          Let's get reading!
+        </p>
+      </div>
+      <div class="links1">
+        <div class="Docs">
+          <h2>Docs</h2>
+          <p>
+            <a class="link" href="https://developer.mozilla.org/en-US/">MDN</a>
+          </p>
+          <p><a class="link" href="https://www.w3schools.com/">W3schools</a></p>
+        </div>
+      </div>
+      <div class="links2">
+        <div class="Tools">
+          <h2>Tools</h2>
+          <p>
+            <a
+              class="link"
+              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+              >Flexbox</a
+            >
+          </p>
+          <p>
+            <a class="link" href="https://rgbacolorpicker.com/hex-to-rgba"
+              >HEXtoRGBA</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      let shadow =
+        '0 2px 1px #747474, -1px 3px 1px #767676, -2px 5px 1px #787878';
+
+      function mouseOver() {
+        this.style.textShadow = shadow;
+        this.style.fontSize = '20px';
+      }
+
+      function mouseOut() {
+        this.style.textShadow = 'none';
+        this.style.fontSize = '15px';
+      }
+
+      let links = document.querySelectorAll('.link');
+
+      links.forEach((link) => link.addEventListener('mouseover', mouseOver));
+      links.forEach((link) => link.addEventListener('mouseout', mouseOut));
+    </script>
+  </body>
+</html>
