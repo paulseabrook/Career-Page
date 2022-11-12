@@ -165,16 +165,38 @@ a.button {
 }
 
 .headshot {
-  height: 370px;
-  width: 250px;
+  height: 335px;
+  width: 225px;
   border-radius: 10px;
 }
 
 h1 {
   color: cornsilk;
+  padding-left: 20px;
+}
+
+h2 {
+  color: cornsilk;
+}
+
+h3 {
+  color: cornsilk;
 }
 
 .headerOneWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerTwoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.headerThreeWrapper {
   display: flex;
   justify-content: center;
   align-items: center;

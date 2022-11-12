@@ -7,23 +7,27 @@
     <title>Career Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
 
+  <body>
+    <h1>Paul Seabrook</h1>
     <!-- We are going to create WesBos's follow along nav for our Career Page -->
     <nav class="top">
-      <!-- This div of class dropdownBackground is the one div that will follow around. Notice it is inside of the nav -->
+      <!-- This div of class dropdownBackground is the one div that will follow around. This is one div, not three separate divs -->
+      <!-- Notice it is inside of the nav -->
       <div class="dropdownBackground">
+        <!-- arrow is the small "triangle" pointing upwards -->
         <span class="arrow"></span>
       </div>
 
       <ul class="cool">
+        <!-- These li's are the "triggers" that we will hover on -->
+        <!-- these parent li's help that the dropdown doesn't fade away upon mousing over the link inside the div. We are still inside the li -->
         <li>
-          <!-- these parent li's help that the dropdown doesn't fade away upon releasing the hover from the <a> -->
           <a href="#">About Me</a>
           <div class="dropdown dropdown1">
             <div class="bio">
               <!-- TODO: need to update this casual picture of me -->
-              <img src="./images/casual.jpeg" class="casual"/>
+              <img src="./images/casual.jpeg" class="casual" />
               <p>
                 Hello! My name is Paul Seabrook. I am currently undergoing a
                 full stack software engineering program and am looking to break
@@ -88,12 +92,16 @@
         </li>
       </ul>
     </nav>
-    <div class="headerOneWrapper">    
-      <h1>Paul Seabrook</h1>
+
+    <div class="headerTwoWrapper">
+      <h2>Welcome to my page</h2>
     </div>
     <div class="headshotWrapper">
-      <img src="./images/headshot.jpg" class="headshot">
+      <img src="./images/headshot.jpg" class="headshot" />
     </div>
-    <script src="scripts.js"></scripts>
+    <div class="headerThreeWrapper">
+      <h3>Please reach out!</h3>
+    </div>
+    <script src="scripts.js"></script>
   </body>
 </html>
