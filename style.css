@@ -157,3 +157,25 @@ a.button {
 .button[href*='courses'] {
   background: #ffc600;
 }
+
+.headshotWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot {
+  height: 370px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: cornsilk;
+}
+
+.headerOneWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
