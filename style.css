@@ -119,6 +119,9 @@ nav ul {
 .bio img {
   float: left;
   margin-right: 20px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
 }
 
 .courses {

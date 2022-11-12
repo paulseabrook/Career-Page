@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Career Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,13 +21,72 @@
           <a href="#">About Me</a>
           <div class="dropdown dropdown1">
             <div class="bio">
-              <!-- TODO: need to find a casual image of me -->
-              <img src="" />
+              <!-- TODO: need to update this casual picture of me -->
+              <img src="./images/casual.jpeg" class="casual"/>
+              <p>
+                Hello! My name is Paul Seabrook. I am currently undergoing a
+                full stack software engineering program and am looking to break
+                into the industry. When I am not developing, I enjoy being
+                involved in and attending my church, spending time with friends
+                and family, and playing disc golf.
+              </p>
               <a href="https://www.linkedin.com/in/paul-seabrook-729190a5/"></a>
+              <a href="https://github.com/paulseabrook"></a>
             </div>
           </div>
         </li>
+        <!-- Second parent li for tab -->
+        <li>
+          <a href="#">Resources</a>
+          <ul class="dropdown courses">
+            <li>
+              <span class="code">MDN</span>
+              <a href="https://developer.mozilla.org/en-US/"
+                >Developer.Mozilla</a
+              >
+            </li>
+            <li>
+              <span class="code">W3</span>
+              <a href="https://www.w3schools.com/">W3Schools</a>
+            </li>
+            <li>
+              <span class="code">BS</span>
+              <a href="https://getbootstrap.com/">Bootstrap</a>
+            </li>
+            <li>
+              <span class="code">Node</span>
+              <a href="https://nodejs.org/en/docs/">Node.js</a>
+            </li>
+            <li>
+              <span class="code">NPM</span>
+              <a href="https://www.npmjs.com/">Node Package Manager</a>
+            </li>
+          </ul>
+        </li>
+        <!-- Last Parent LI -->
+
+        <li>
+          <a href="#">Other Links</a>
+          <ul class="dropdown dropdown3">
+            <li>
+              <a
+                class="button"
+                href="https://www.linkedin.com/in/paul-seabrook-729190a5/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a class="button" href="https://github.com/paulseabrook"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a class="button" href="./pages/resume.html">Resume</a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
+    <script src="scripts.js"></scripts>
   </body>
 </html>
