@@ -168,6 +168,16 @@ a.button {
   height: 335px;
   width: 225px;
   border-radius: 10px;
+  border: 5px solid rgba(255, 248, 220, 0.739);
+}
+
+.dg {
+  color: cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  flex-direction: column;
 }
 
 h1 {
@@ -200,4 +210,36 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: rgba(114, 186, 94, 0.05);
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+}
+
+.item {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  /* background: rgba(255, 213, 70, 0.4); */
+  /* border: 2px dashed rgba(236, 198, 48, 0.5); */
+}
+
+.dgp {
+  font-size: 17px;
+  padding: 20px;
 }
