@@ -3,6 +3,11 @@ html {
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
 }
 
+/* Border around every element for learning/research */
+/* * {
+  border: 2px solid red;
+} */
+
 *,
 *:before,
 *:after {
@@ -124,6 +129,26 @@ nav ul {
   border-radius: 10px;
 }
 
+.drivers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#firebird {
+  height: 200px;
+  width: 300px;
+}
+
+#destroyer {
+  height: 200px;
+  width: 250px;
+}
+.bio h4 {
+  align-items: center;
+  justify-content: center;
+}
+
 .courses {
   min-width: 300px;
 }
@@ -193,7 +218,7 @@ h3 {
   color: cornsilk;
 }
 
-.headerOneWrapper {
+.headerWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,12 +229,6 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-top: -20px;
-}
-
-.headerThreeWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
@@ -242,4 +261,21 @@ h3 {
 .dgp {
   font-size: 17px;
   padding: 20px;
+}
+
+.laugh {
+  color: cornsilk;
+  font-size: 10px;
+}
+
+.line {
+  width: 1000px;
+  height: 47px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.driverContent {
+  display: flex;
+  flex-direction: column;
 }
