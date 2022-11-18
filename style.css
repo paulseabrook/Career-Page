@@ -135,6 +135,12 @@ nav ul {
   align-items: center;
 }
 
+.midranges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #firebird {
   height: 200px;
   width: 300px;
@@ -201,7 +207,6 @@ a.button {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
   flex-direction: column;
 }
 
@@ -263,11 +268,6 @@ h3 {
   padding: 20px;
 }
 
-.laugh {
-  color: cornsilk;
-  font-size: 10px;
-}
-
 .line {
   width: 1000px;
   height: 47px;
@@ -275,7 +275,48 @@ h3 {
   position: relative;
 }
 
-.driverContent {
+#transition-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  background-color: cornsilk;
+  color: grey;
+  font-size: 18px;
+  padding: 16px 24px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.laugh {
+  font-size: 8px;
+  color: cornsilk;
+}
+
+.dgGif {
+  border-radius: 10px;
+}
+
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#buzzz {
+  height: 200px;
+  width: 250px;
 }
