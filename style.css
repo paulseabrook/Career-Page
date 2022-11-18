@@ -141,6 +141,12 @@ nav ul {
   align-items: center;
 }
 
+.putters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #firebird {
   height: 200px;
   width: 300px;
