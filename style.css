@@ -141,12 +141,6 @@ nav ul {
   align-items: center;
 }
 
-.putters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 #firebird {
   height: 200px;
   width: 300px;
@@ -309,6 +303,7 @@ button:hover {
 .laugh {
   font-size: 8px;
   color: cornsilk;
+  padding: 25px;
 }
 
 .dgGif {
@@ -325,4 +320,45 @@ button:hover {
 #buzzz {
   height: 200px;
   width: 250px;
+}
+
+.giphy-embed {
+  border-radius: 10px;
+}
+
+.laugh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#laughLink {
+  font-size: 7px;
+}
+
+.gif {
+  color: cornsilk;
+}
+
+#rick {
+  color: cornsilk;
+  background-color: rgba(171, 171, 171, 0.267);
+  font-size: 30px;
+  padding: 10px;
+  margin: 50px;
+  border-radius: 10px;
+  font-family: courier;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: cornsilk;
 }
