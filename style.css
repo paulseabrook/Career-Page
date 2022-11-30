@@ -366,3 +366,10 @@ button:hover {
 ul {
   list-style-type: none;
 }
+
+@media (max-width: 1000px) {
+  .cool {
+    display: flex;
+    flex-direction: column;
+  }
+}
