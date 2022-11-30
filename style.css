@@ -362,3 +362,7 @@ button:hover {
   align-items: center;
   color: cornsilk;
 }
+
+ul {
+  list-style-type: none;
+}
