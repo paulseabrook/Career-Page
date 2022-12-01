@@ -178,6 +178,15 @@ a.button {
   margin-bottom: 10px;
 }
 
+.aMove {
+  margin-bottom: 300px;
+  transition: all 0.75s ease-in-out;
+}
+
+.aWide {
+  width: 100vh;
+}
+
 /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
 .button[href*='twitter'] {
   background: #019fe9;
@@ -292,7 +301,7 @@ button {
   font-size: 18px;
   padding: 16px 24px;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.75s ease-in-out;
   cursor: pointer;
 }
 
@@ -371,5 +380,18 @@ ul {
   .cool {
     display: flex;
     flex-direction: column;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    margin: none;
+    padding: none;
+    width: 100%;
+    text-align: center;
   }
 }

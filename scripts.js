@@ -3,8 +3,16 @@ const triggers = document.querySelectorAll('.cool > li');
 // this is our little background div that follows us around
 const background = document.querySelector('.dropdownBackground');
 const nav = document.querySelector('.top');
+const a = document.querySelectorAll('a');
+const x = window.matchMedia('(max-width: 1000px');
 
 function handleEnter() {
+  if (x.matches) {
+    console.log('This is working');
+    this.classList.add('aMove');
+  }
+
+  //a.classList.add('aMove');
   // add class of trigger-enter first to "this" which is our list item
   this.classList.add('trigger-enter');
   // add class of trigger-enter-active next but only after 150 milliseconds
@@ -37,8 +45,6 @@ function handleEnter() {
     left: dropdownCoords.left - navCoords.left,
   };
 
-  console.log(dropdownCoords, navCoords.top);
-
   background.style.setProperty('width', `${coords.width}px`);
   background.style.setProperty('height', `${coords.height}px`);
 
@@ -48,6 +54,7 @@ function handleEnter() {
 }
 
 function handleLeave() {
+  this.classList.remove('aMove');
   this.classList.remove('trigger-enter', 'trigger-enter-active');
   background.classList.remove('open');
 }
