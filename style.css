@@ -394,4 +394,13 @@ ul {
     width: 100%;
     text-align: center;
   }
+  .dropdownBackground.open {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .dropdown {
+    position: absolute;
+    z-index: 3;
+  }
 }
